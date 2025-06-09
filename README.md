@@ -1,7 +1,7 @@
 # tinyCPU
 My first ever working CPU design (8-bit architecture), made in Logisim Evolution
 
-![The entire architecture](image.jpg)
+![The entire architecture](image.png)
 
 # INSTRUCTION SCHEME
 
