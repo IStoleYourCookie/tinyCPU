@@ -1,6 +1,8 @@
 # tinyCPU
 My first ever working CPU design (8-bit architecture), made in Logisim Evolution
 
+!Unconditional jumping logic is flawed, must be fixed soon!
+
 ![The entire architecture](image.png)
 
 # INSTRUCTION SCHEME
