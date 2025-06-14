@@ -1,6 +1,8 @@
 # tinyCPU
 My second working CPU design (8-bit architecture), made in Logisim Evolution
 
+Fun fact: this circuit can be translated to valid VHDL automatically inside Logisim (not tested though!)
+
 ![CPU architecture iwthout the instruction loading and the details of the ALU](image.png)
 
 # INSTRUCTION SCHEME
