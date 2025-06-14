@@ -189,13 +189,13 @@
     <comp lib="0" loc="(810,870)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="J_e"/>
+      <a name="label" val="JMP"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(810,890)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="J_m"/>
+      <a name="label" val="JZ"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(840,340)" name="Clock"/>
@@ -206,16 +206,10 @@
     <comp lib="0" loc="(890,280)" name="Constant">
       <a name="facing" val="south"/>
     </comp>
-    <comp lib="1" loc="(1390,430)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="1" loc="(1420,420)" name="AND Gate">
+    <comp lib="1" loc="(1480,420)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(1470,440)" name="AND Gate">
-      <a name="size" val="30"/>
-    </comp>
-    <comp lib="1" loc="(1510,430)" name="XOR Gate">
+    <comp lib="1" loc="(1510,410)" name="OR Gate">
       <a name="size" val="30"/>
     </comp>
     <comp lib="1" loc="(300,200)" name="AND Gate">
@@ -298,17 +292,15 @@
     <wire from="(1180,370)" to="(1190,370)"/>
     <wire from="(1330,370)" to="(1410,370)"/>
     <wire from="(1330,390)" to="(1360,390)"/>
-    <wire from="(1330,410)" to="(1390,410)"/>
-    <wire from="(1330,430)" to="(1350,430)"/>
-    <wire from="(1350,430)" to="(1350,450)"/>
-    <wire from="(1350,430)" to="(1370,430)"/>
-    <wire from="(1350,450)" to="(1440,450)"/>
+    <wire from="(1330,400)" to="(1330,410)"/>
+    <wire from="(1330,400)" to="(1480,400)"/>
+    <wire from="(1330,430)" to="(1450,430)"/>
     <wire from="(1360,390)" to="(1360,490)"/>
-    <wire from="(1420,420)" to="(1470,420)"/>
     <wire from="(1430,340)" to="(1440,340)"/>
-    <wire from="(1440,340)" to="(1440,430)"/>
-    <wire from="(1510,430)" to="(1520,430)"/>
-    <wire from="(1520,430)" to="(1520,500)"/>
+    <wire from="(1440,340)" to="(1440,410)"/>
+    <wire from="(1440,410)" to="(1450,410)"/>
+    <wire from="(1510,410)" to="(1520,410)"/>
+    <wire from="(1520,410)" to="(1520,500)"/>
     <wire from="(200,310)" to="(220,310)"/>
     <wire from="(200,350)" to="(210,350)"/>
     <wire from="(200,380)" to="(380,380)"/>
@@ -726,20 +718,20 @@
       <rect height="4" stroke="none" width="10" x="181" y="98"/>
       <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="174" y="103">J_a</text>
       <rect height="3" stroke="none" width="10" x="181" y="118"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="175" y="123">J_e</text>
       <rect height="3" stroke="none" width="10" x="181" y="138"/>
-      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="174" y="143">J_m</text>
       <rect height="21" stroke="none" width="120" x="60" y="150"/>
       <rect fill="none" height="120" stroke="#000000" stroke-width="2" width="121" x="60" y="50"/>
       <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="119" y="166">cpu</text>
-      <visible-register height="10" path="/Register(400,560)" stroke-width="0" width="13" x="68" y="115"/>
-      <visible-register height="10" path="/Register(400,580)" stroke-width="0" width="13" x="87" y="115"/>
-      <visible-register height="10" path="/Register(400,600)" stroke-width="0" width="13" x="105" y="115"/>
-      <visible-register height="10" path="/Register(400,620)" stroke-width="0" width="13" x="123" y="115"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="74" y="108">A</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="93" y="108">B</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="111" y="108">C</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="129" y="108">J</text>
+      <visible-register height="10" path="/Register(400,560)" stroke-width="0" width="13" x="68" y="115"/>
+      <visible-register height="10" path="/Register(400,580)" stroke-width="0" width="13" x="87" y="115"/>
+      <visible-register height="10" path="/Register(400,600)" stroke-width="0" width="13" x="105" y="115"/>
+      <visible-register height="10" path="/Register(400,620)" stroke-width="0" width="13" x="123" y="115"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="166" y="119">JMP</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="168" y="138">JZ</text>
       <circ-anchor facing="east" x="190" y="60"/>
       <circ-port dir="in" pin="190,550" x="50" y="60"/>
       <circ-port dir="in" pin="190,590" x="50" y="80"/>
@@ -812,13 +804,13 @@
     <comp lib="0" loc="(800,830)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="J_e"/>
+      <a name="label" val="JMP"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(800,850)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
-      <a name="label" val="J_m"/>
+      <a name="label" val="JZ"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="2" loc="(280,580)" name="Demultiplexer">
